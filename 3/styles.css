@@ -1,0 +1,42 @@
+/* Just styling buttons and headers and links all the codes in .js*/
+
+h1 {
+    color: #3c4fe0;
+    text-shadow: 2px 2px #5adaff;
+    font-family: verdana, roboto, proxima-nova;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+#btn {
+    background-image: radial-gradient(200% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border-radius: 6px;
+    font-family: verdana, roboto, proxima-nova;
+    font-size: 24px;
+    border: 1px solid #5468ff;
+    color: #FFFFFF;
+    padding: 12px 14px;
+    transition: box-shadow .15s, transform .15s;
+
+}
+
+#btn:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+#btn:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+#btn:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.hints {
+    color: #3c4fe0;
+    text-shadow: 0 0 5px #5adaff;
+    font-size: 24px;
+    font-weight: 800;
+}

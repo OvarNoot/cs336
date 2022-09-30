@@ -1,0 +1,103 @@
+/* It hides any overflowcontent for it to not add any horizontal scrollbars */
+body {
+    overflow-x: hidden;
+}
+
+/* Adjusts image position*/
+#imagepos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* adjusts image size with height so width will be automatically be done*/
+.imageadjustment {
+    height: 100px;
+}
+
+/*Search bar position
+display justify content align items for the search bar to be centered
+position and top left to move around the search bar*/
+#searchbarpos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -50px;
+    left: 350px;
+}
+
+/*Search bar styling
+padding to decide the space around search bar content
+border raidus to make it more circular search bar
+backgorund color to change background color to light grey*/
+.searchbar {
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    background-color: lightgrey;
+}
+
+/* When hovered changes brightness of searchbar*/
+.searchbar:hover {
+    filter: brightness(110%)
+}
+
+/* When focused changes brightness of searchbar*/
+.searchbar:focus {
+    filter: brightness(110%);
+}
+
+/*Menu Bars styles
+font family to change font and rest as backup fonts
+font size to decide maximum size and minimum size
+font weight for text to be bold
+list style none to remove the dots
+text transform to make everything uppercase
+display justify content align items for the search bar to be centered
+changes the height
+*/
+.lined {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: max(1.3vw, 12px);
+    font-weight: bold;
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: maroon;
+    height: 50px;
+}
+
+/* makes them move away from one another*/
+.lined li {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* When hovered changes color to yellow
+transition for how long it takes to change*/
+.lined li:hover {
+    color: yellow;
+    transition: .1s;
+}
+
+/*changes how the texts are positioned */
+.textpos {
+    text-align: center;
+}
+
+/* Adjusts the styles of the bottome texts
+padding left and right for it to be more looked centered
+font size to change fotn size
+font family to change font and rest as backup fonts
+font weight to change font to bold*/
+.textstyle {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
