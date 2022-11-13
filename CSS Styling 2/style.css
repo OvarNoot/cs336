@@ -1,0 +1,56 @@
+/* Made the sizes big because I wanted to see descreasing sizes */
+.card {
+    display: grid;
+    white-space: nowrap;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+/* Set which part of column it will take place and 
+span to take up 3 rows spaces by itself*/
+.logo-div {
+    grid-column-start: 1;
+    grid-row: span 3;
+}
+
+/* makes image resized with window size */
+.logo {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+}
+
+/* make text be resized with window size */
+.title {
+    font-weight: bold;
+    font-size: max(8vw, 16px);
+}
+
+/* make text be resized with window size */
+.subtitle {
+    font-size: max(5vw, 8px);
+
+}
+
+/* make text be resized with window size
+no border text color to white and make button to be round */
+
+.find-more-btn {
+    background-color: green;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: max(6vw, 16px);
+
+}
+
+/* change cursor when hover over the button */
+.find-more-btn:hover {
+    cursor: grab;
+}
+
+/* gives shadow to the button */
+.shadowed {
+    box-shadow: 2px 2px 5px black;
+}

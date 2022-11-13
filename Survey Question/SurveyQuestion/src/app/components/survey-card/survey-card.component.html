@@ -1,0 +1,20 @@
+<mat-card>
+  <mat-card-title>{{ question }}</mat-card-title>
+  <!-- takes the question from parent -->
+  <mat-icon>question_answer</mat-icon>
+  <mat-card-subtitle
+    >Choose your answer, from {{ minValue }} to
+    {{ maxValue }}</mat-card-subtitle
+  >
+  <!-- using min and max value for subtitle and slider-->
+  <mat-slider
+    thumbLabel
+    min="{{ minValue }}"
+    max="{{ maxValue }}"
+    step="1"
+    value="1"
+    (change)="sliderChanged($event)"
+  ></mat-slider>
+  <h1>Result: {{ results }}</h1>
+  <!-- displays the result on the web-->
+</mat-card>

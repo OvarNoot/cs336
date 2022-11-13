@@ -1,0 +1,28 @@
+<body>
+  <app-survey-card
+    question="How Many Goblins in your basement?"
+    minValue="5"
+    maxValue="100"
+    (result)="gotResult($event)"
+  >
+  </app-survey-card>
+  <!-- updates question minValue maxValue on parent, parent listening for result event-->
+  <br />
+  <app-survey-card
+    question="When is your graduation year?"
+    minValue="2022"
+    maxValue="2028"
+    (result)="gotResult($event)"
+  >
+  </app-survey-card>
+  <!-- updates question minValue maxValue on parent, parent listening for result event-->
+  <br />
+  <app-survey-card
+    question="How many blueberries do you eat?"
+    minValue="1"
+    maxValue="1000"
+    (result)="gotResult($event)"
+  >
+  </app-survey-card>
+  <!-- updates question minValue maxValue on parent, parent listening for result event-->
+</body>
